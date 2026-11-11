@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>phyloROC poster companion</title>
+<meta name="description" content="Interactive companions to the phyloROC poster: the Return to the Water explorer and the package's two vignettes.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap">
+<style>
+  /* One column of link cards on a deep-water ground, echoing Return to the Water */
+  :root {
+    --bg: #f3f8f8; --surface: #ffffff; --fg: #0e2a2e; --muted: #4c6a6e;
+    --line: #cfe1e2; --accent: #0d7f88;
+    --display: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #071a1d; --surface: #0d272b; --fg: #e6f4f4; --muted: #94b6b9; --line: #1d4248; --accent: #53e3ed; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 16px 4rem; display: grid; gap: 2rem; }
+  .eyebrow { font: 700 0.75rem/1 var(--body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font: 800 clamp(1.9rem, 6vw, 2.6rem)/1.1 var(--display); margin: 0.6rem 0 0.8rem; text-wrap: balance; }
+  header p { margin: 0; color: var(--muted); max-width: 36rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+  a.card { display: grid; gap: 0.3rem; padding: 1.1rem 1.25rem; background: var(--surface); border: 1px solid var(--line);
+           border-radius: 10px; color: inherit; text-decoration: none; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  a.card strong { font: 600 1.15rem/1.3 var(--display); }
+  a.card span { color: var(--muted); }
+  a.card em { font-style: normal; color: var(--accent); font-weight: 500; }
+  footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Poster companion</div>
+    <h1>Phylogenetic ROC analysis, interactively</h1>
+    <p>Explore the data and methods behind the poster: which limb proportions reveal a return to the water, and how phyloROC compares predictive models across a phylogeny.</p>
+  </header>
+  <ul>
+    <li><a class="card" href="return-to-the-water.html"><strong>Return to the Water</strong><span>An interactive explorer of 160 extinct reptiles on eight supertrees, with animated animals and predictions of aquatic habits and flippers.</span><em>Open the explorer →</em></a></li>
+    <li><a class="card" href="flipper.html"><strong>Flipper vignette</strong><span>phyloROC compares limb predictors, tree topologies and clades for predicting highly or fully aquatic habits in amniotes.</span><em>Read the vignette →</em></a></li>
+    <li><a class="card" href="cropmod.html"><strong>Cropmod vignette</strong><span>phyloROC compares six deep-learning models that find the chewing surface on 3D scans of mammal molars, overall and along the tree.</span><em>Read the vignette →</em></a></li>
+  </ul>
+  <footer>
+    Gordon, C. M., Freisem, L. S., Griffin, C. T., Gauthier, J. A. and Bhullar, B.-A. S. (2025). Limb proportions predict aquatic habits and soft-tissue flippers in extinct amniotes. <i>Current Biology</i> 35: 1–17.
+    <a href="https://doi.org/10.1016/j.cub.2025.10.068">doi.org/10.1016/j.cub.2025.10.068</a>
+  </footer>
+</main>
+</body>
+</html>
